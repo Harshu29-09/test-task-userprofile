@@ -1,0 +1,42 @@
+.user-directory {
+    text-align: center;
+    padding: 20px;
+}
+
+.user-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.user-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 15px;
+    flex: 1;
+    max-width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in-out;
+}
+
+.user-card:hover {
+    transform: scale(1.02);
+  }
+
+.user-card-header {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .user-card {
+        max-width: 100%;
+    }
+}

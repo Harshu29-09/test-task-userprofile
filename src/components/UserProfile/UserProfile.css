@@ -1,0 +1,74 @@
+.user-profile {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.go-back-button {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+
+.user-profile h1 {
+  margin-bottom: 20px;
+}
+
+.user-details {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin: 10px;
+} 
+
+.user-row {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.user-column {
+  text-align: left;
+}
+
+.user-posts {
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+
+.user-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.user-card p {
+  font-size: 14px;
+  color: #888;
+}
+
+.post-wrapper {
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .user-row {
+    display: inline;
+    margin-bottom: 10px;
+  }
+
+  .post-wrapper {
+    flex-basis: 100%;
+  }
+
+  .user-posts {
+    align-items: center;
+    flex: 0 0 33.333333%
+  }
+}
